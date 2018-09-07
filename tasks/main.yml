@@ -1,0 +1,16 @@
+- name: Install pm2 global package
+  npm:
+    name: pm2
+    global: yes
+    version: "{{ pm2_version }}"
+
+- name: Startup pm2
+  shell: pm2 startup {{ pm2_startup }} -u {{ pm2_user }}
+  args:
+    creates: "/etc/init.d/pm2-{{ pm2_user }}"
+
+- name: Update pm2 home in init.d
+  lineinfile:
+    dest: "/etc/init.d/pm2-{{ pm2_user }}"
+    regexp: "export PM2_HOME="
+    line: "export PM2_HOME={{ pm2_home }}"
