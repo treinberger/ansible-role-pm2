@@ -1,0 +1,5 @@
+---
+- src: https://github.com/iroquoisorg/ansible-role-nodejs.git
+  name: nodejs
+  version: master
+  scm: git
