@@ -1,11 +1,12 @@
+---
 - name: Install pm2 global package
   npm:
     name: pm2
-    global: yes
+    global: true
     version: "{{ pm2_version }}"
 
 - name: Startup pm2
-  shell: pm2 startup {{ pm2_startup }} -u {{ pm2_user }}
+  command: pm2 startup {{ pm2_startup }} -u {{ pm2_user }}
   args:
     creates: "/etc/init.d/pm2-{{ pm2_user }}"
 

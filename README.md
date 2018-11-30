@@ -20,3 +20,7 @@ pm2_home: /var/www/.pm2
 pm2_version: 2.4.4
 
 ```
+
+# Development
+
+Please check [development guide](DEVELOPMENT.md) for details about developing and testing this role.
