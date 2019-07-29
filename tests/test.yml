@@ -2,5 +2,5 @@
 - hosts: localhost
   remote_user: root
   roles:
-    - iroquoisorg.nodejs
+    - irmoobear.nodejs
     - ansible-role-pm2

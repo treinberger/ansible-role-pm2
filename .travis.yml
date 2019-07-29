@@ -6,9 +6,9 @@ dist: xenial
 env:
   - SITE=test.yml
 
-before_install:
-  - sudo yum update -q -y
-  - sudo yum install -y curl
+# before_install:
+#   - sudo yum update -q -y
+#   - sudo yum install -y curl
 
 install:
   # Install Ansible.

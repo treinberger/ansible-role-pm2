@@ -12,4 +12,4 @@ galaxy_info:
   galaxy_tags: []
 
 dependencies:
-  - iroquoisorg.nodejs
+  - irmoobear.nodejs
