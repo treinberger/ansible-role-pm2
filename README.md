@@ -1,6 +1,6 @@
 # pm2
 
-[![Build Status](https://travis-ci.com/treinberger/ansible-role-pm2.svg?branch=master)](https://travis-ci.com/treinberger/ansible-role-memcached)
+[![Build Status](https://travis-ci.com/treinberger/ansible-role-pm2.svg?branch=master)](https://travis-ci.com/treinberger/ansible-role-pm2)
 
 Ansible role for pm2
 
